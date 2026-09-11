@@ -1,0 +1,23 @@
+type PlayerCardProps = {
+  firstName: string;
+  lastName: string;
+  age: number;
+  position: string;
+};
+
+export default function PlayerCard({
+  firstName,
+  lastName,
+  age,
+  position,
+}: PlayerCardProps) {
+  return (
+    <article>
+      <h2>
+        {firstName} {lastName}
+      </h2>
+      <p>Âge : {age} ans</p>
+      <p>Poste : {position}</p>
+    </article>
+  );
+                 }
